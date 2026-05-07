@@ -1,0 +1,18 @@
+---
+description: iTap 代码改动后打 release 并清理构建
+globs:
+  - "app/**/*.kt"
+  - "app/**/*.xml"
+  - "app/**/*.gradle"
+  - "scripts/**/*.sh"
+---
+
+# iTap：改动后的构建与清理
+
+每当在本仓库 **iTap** 中完成有意义的代码或资源修改后（除非用户明确说不要构建）：
+
+1. 在项目根目录执行：`bash scripts/release-apk-and-clean.sh`
+2. 该脚本会：`assembleRelease` → 将 `iTap.apk` 复制到 **`dist/iTap.apk`** → 再执行 `gradle clean`
+3. 若脚本失败，根据终端输出修复后重试。
+
+不要依赖 `app/build/outputs/` 下的路径作为最终产物（`clean` 会删除）；以 **`dist/iTap.apk`** 为准。

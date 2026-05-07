@@ -1,0 +1,11 @@
+# Gradle / Android
+.gradle/
+build/
+**/build/
+local.properties
+*.iml
+.idea/
+.DS_Store
+
+# 本脚本输出的安装包（勿提交）
+dist/*.apk

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">iTap</string>
+    <string name="service_label">iTap 手势服务</string>
+    <string name="service_description">AutoTap：短按悬浮钮开关自动连点。Hold：音量加与音量减在 1.2 秒内先后按下触发双指长按（与 TwoTap 相同）；进入 Hold 时会关掉 AutoTap 并隐藏按钮，之后要再用 AutoTap 请再点一次应用图标。</string>
+
+    <string name="notif_keepalive_channel">后台驻留</string>
+    <string name="notif_keepalive_title">iTap 手势服务</string>
+    <string name="notif_keepalive_text">正在运行（降低被系统回收概率）</string>
+    <string name="main_ready_toast">iTap 已就绪。AutoTap：短按按钮；用过 Hold 后若要 AutoTap 请再点一次本图标。\n若服务常被系统关掉：请在多任务界面锁定 iTap、允许自启动，并已尝试忽略电池优化。</string>
+</resources>
